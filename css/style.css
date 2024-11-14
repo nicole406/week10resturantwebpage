@@ -1,0 +1,311 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+    font-family:'Quicksand',sans-serif;
+    background-color: #ffffff; 
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #00492c00;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    
+    background-color: #f39c12; 
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Welcome Section */
+#welcome {
+    background: url(https://images.pexels.com/photos/2598683/pexels-photo-2598683.jpeg?auto=comress&cs=tinysrgb&w=1260&h=750&dpr=2) no-repeat center center/cover;
+    color: #fbba16;
+    padding: 150px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0px;  
+    left: 0px; 
+    min-height: 100vh;
+}
+
+#welcome::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.231); 
+    z-index: 1;
+}
+
+#welcome h1, #welcome p {
+    z-index: 2;
+    text-align: center;
+}
+
+#welcome h1 {
+    font-size: 8rem;
+    font-family: 'Irish Grover', cursive;
+    position: relative;
+    top: 50px;  
+    left: 15px; 
+}
+
+#welcome p {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    max-width: 600px;
+    line-height: 1.5;
+    color: #ffffff;
+    font-family: 'Gloria Hallelujah', cursive;
+    position: relative;
+    top: 50px; 
+    left: 15px; 
+}
+
+/* About Section */
+#about {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+#about .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+#about {
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    top: 30px;  
+    left: 0px; 
+}
+
+#about h2 {
+    font-size: 3rem;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #f26e10;
+    margin-bottom: 20px;
+
+}
+
+#about p {
+    font-size: 1.0rem;
+    color: #171515;
+    line-height: 1.8;
+    max-width: 600px;
+}
+
+#about .about-image {
+    width: 500px;
+    height: 500px;
+    background: url(https://as2.ftcdn.net/v2/jpg/05/28/54/27/1000_F_528542705_sIZW856d8ofo8WLTauSnxTgBjkIg5mcy.jpg) no-repeat center center/cover;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+.section-divider {
+    border: 0;
+    height: 2px;
+    background-color: #ddd;
+    margin: 40px 0;
+}
+
+
+/* Menu Section */
+#menu {
+    padding: 20px 20px;
+    text-align: center;
+    background-color: #ffffff; 
+}
+
+#menu h2 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 3.0rem;
+    color: #f26e10;
+    margin-bottom: 30px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fbba16;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.item-info {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.item-info h3 {
+    color: #00492c;
+    font-size: 1.5rem;
+}
+
+.item-info p {
+    font-size: 1rem;
+    color: #00492c;
+    margin: 5px 0 5px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+    white-space: nowrap;
+}
+
+
+.price {
+    float: right;
+}
+
+.section-divider {
+    border: 0;
+    height: 10px;
+    background-color: #00492c;
+    margin: 40px 0;
+}
+
+/* Contact Section */
+#contact {
+    background-color:#00492c;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #f39c12;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 10px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #e67e22;
+}
+
+/* Footer */
+footer {
+    background-color: #f26e1081;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about .about-image {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .menu-category ul {
+        flex-direction: column;
+    }
+}
